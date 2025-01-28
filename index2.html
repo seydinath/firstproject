@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page d'Accueil</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #3b1b1b;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            margin: 20px 0;
+        }
+        section {
+            margin-bottom: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #007BFF;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        footer .social-links a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        footer .social-links a:hover {
+            text-decoration: underline;
+        }
+        form {
+            margin-top: 20px;
+        }
+        form label {
+            display: block;
+            margin: 5px 0;
+        }
+        input, textarea, button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        table, th, td {
+            border: 1px solid #333;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+        iframe {
+            width: 100%;
+            height: 315px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenue sur ma page d'accueil</h1>
+        <nav>
+            <a href="index2.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="work.html">Work</a> |
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <section id="about">
+            <h2>About</h2>
+            <p>Quelques informations à propos de moi.</p>
+            <table>
+                <tr>
+                    <th>Nom</th>
+                    <th>Âge</th>
+                    <th>Profession</th>
+                </tr>
+                <tr>
+                    <td>Seydina Th.D</td>
+                    <td>29</td>
+                    <td>Développeur web</td>
+                </tr>
+                
+            </table>
+            <!-- YouTube Video -->
+            <h3>Ma Vidéo Préférée</h3>
+            <iframe width="1200" height="720" src="https://www.youtube.com/embed/n9Y2Eb4BaSg?si=TjlZB1pvMEy4x_Xa" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+        <section id="work">
+            <h2>Work</h2>
+            <p>Description de mon expérience professionnelle et de mes projets.</p>
+        </section>
+        <section id="resume">
+            <h2>Resume</h2>
+            <p>Un aperçu de mon CV.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Comment me contacter.</p>
+            <form>
+                <label for="name">Nom:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+
+                <label for="newsletter">S'abonner à la newsletter:</label>
+                <input type="checkbox" id="newsletter" name="newsletter">
+
+                <label>Genre:</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Homme</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Femme</label>
+
+                <button type="submit">Envoyer</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Seydina</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com">Facebook</a> |
+            <a href="https://www.twitter.com">Twitter</a> |
+            <a href="https://www.linkedin.com">LinkedIn</a>
+        </div>
+    </footer>
+</body>
+</html>
