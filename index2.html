@@ -99,11 +99,22 @@
             height: 315px;
             border: none;
         }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 10px;
+            margin-top: 20px;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenue sur ma page d'accueil</h1>
+        <h1>Welcome to the first project</h1>
         <nav>
             <a href="index2.html">Home</a> |
             <a href="about.html">About</a> |
@@ -138,8 +149,15 @@
         </section>
         <section id="resume">
             <h2>Resume</h2>
-            <p>Un aperçu de mon CV.</p>
+            <p>Un aperçu de mes capacites .</p>
+            <div class="gallery">
+                <img src="image1.jpg" alt="Image 1">
+                <img src="image2.jpg" alt="Image 2">
+                <img src="image3.jpg" alt="Image 3">
+                <img src="image4.jpg" alt="Image 4">
+            </div>
         </section>
+        
         <section id="contact">
             <h2>Contact</h2>
             <p>Comment me contacter.</p>
